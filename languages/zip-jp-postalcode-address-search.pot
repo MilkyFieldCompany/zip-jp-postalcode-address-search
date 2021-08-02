@@ -1,0 +1,93 @@
+#: cbox_text.php
+msgid "Label"
+msgstr ""
+
+#: cbox_text.php
+msgid "Id attribute"
+msgstr ""
+
+#: cbox_text.php
+msgid "Class attribute"
+msgstr ""
+
+#: cbox_text.php
+msgid "Insert Tag"
+msgstr ""
+
+#: cbox_text.php
+msgid "Field type"
+msgstr ""
+
+#: cbox_text.php
+msgid "Required field"
+msgstr ""
+
+#: cbox_text.php
+msgid "Name"
+msgstr ""
+
+#: cbox_text.php
+msgid "Default value"
+msgstr ""
+
+#: cbox_text.php
+msgid "se this text as the placeholder of the field"
+msgstr ""
+
+#: cbox_text.php
+msgid "To use the value input through this field in a mail field, you need to insert the corresponding mail-tag (%s) into the field on the Mail tab."
+msgstr ""
+
+#: cbox_text.php
+msgid "postalcode in/out"
+msgstr ""
+
+#: cbox_text.php
+msgid "prefecture in/out"
+msgstr ""
+
+#: cbox_text.php
+msgid "town name in/out"
+msgstr ""
+
+#: cbox_text.php
+msgid "Company name in/out"
+msgstr ""
+
+#: cbox_text.php
+msgid "prefecture Kana in/out"
+msgstr ""
+
+#: cbox_text.php
+msgid "town name Kana in/out"
+msgstr ""
+
+#: mfc_zipjp.php
+msgid "Postal Code Address Search"
+msgstr ""
+
+#: mfc_zipjp.php
+msgid "Find from postcode"
+msgstr ""
+
+#: mfc_zipjp.php
+msgid "Find from address"
+msgstr ""
+
+#: mfc_zipjp.php
+msgid "ZIPJP text"
+msgstr ""
+
+#: mfc_zipjp.php
+msgid "Generate a address search button tag."
+msgstr ""
+
+#: mfc_zipjp.php
+msgid "Generate a postalcode search button tag."
+msgstr ""
+
+#: mfc_zipjp.php
+msgid ""
+"Generates a form tag for a single-line postalcode search plain text input."
+msgstr ""
+
