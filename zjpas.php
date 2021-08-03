@@ -199,7 +199,7 @@ class ZJPAS_Admin {
 				$zjpas_mfczipjpservice_options['warnBgColor'] = sanitize_text_field($_POST['zjpas_mfczipjpapi_warnBgColor']);
 			}
 			if (array_key_exists('zjpas_mfczipjpapi_apiuri', $_POST)) {
-				$zjpas_mfczipjpservice_options['apiuri'] = sanitize_url($_POST['zjpas_mfczipjpapi_apiuri']);
+				$zjpas_mfczipjpservice_options['apiuri'] = esc_url_raw($_POST['zjpas_mfczipjpapi_apiuri']);
 			}
 			if (array_key_exists('zjpas_mfczipjpapi_pluginscript', $_POST)) {
 				$zjpas_mfczipjpservice_options['pluginscript'] = sanitize_text_field($_POST['zjpas_mfczipjpapi_pluginscript']);
@@ -207,9 +207,8 @@ class ZJPAS_Admin {
 			$zjpas_mfczipjpservice_options = array_replace_recursive( $zjpas_mfczipjpservice_options_defaults, $zjpas_mfczipjpservice_options );
 			
 			check_admin_referer('zjpas_zipjp_config', 'zjpas_zipjpadmn');
-// 			update_option('zjpas_mfczipjpservice_options', $_POST['zjpas_mfczipjpservice_options']);
 			update_option('zjpas_mfczipjpservice_options', $zjpas_mfczipjpservice_options);
- 			?><div class="updated fade"><p><strong><?php _e('ZIP-JP Postalcode Address Search 設定値を保存しました。'). print_r($zjpas_mfczipjpservice_options); ?></strong></p></div><?php
+ 			?><div class="updated fade"><p><strong><?php _e('ZIP-JP Postalcode Address Search 設定値を保存しました。') ?></strong></p></div><?php
 		}
 ?>
 		<div class="wrap">
