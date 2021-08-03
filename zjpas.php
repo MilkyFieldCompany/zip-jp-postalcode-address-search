@@ -33,7 +33,8 @@ class ZJPAS_Admin {
 		add_action( 'init', array( $this, 'init' ) );
 
 		add_action('wp_footer', array( $this, 'fnAddScript' ));
-		add_action( 'plugins_loaded', array( $this, 'mfczipjp_dbcheck' ) );
+		
+		add_action('plugins_loaded', array( $this, 'mfczipjp_dbcheck' ));
 
 		// Register shortcodes
 		add_action('wpcf7_init', array( $this , 'add_shortcodes'));
@@ -140,21 +141,16 @@ class ZJPAS_Admin {
 		add_action( 'admin_menu', array($this, 'add_menu') );
 
 		// ログインしているユーザー向け関数
-// 		add_action( 'wp_ajax_mfczipjpApiCall', array($this, 'fnApiCall') );
 		add_action( 'wp_ajax_zjpas_mfczipjpApiCall', array($this, 'fnApiCall') );
 		
 		// 非ログインユーザー用関数
-// 		add_action( 'wp_ajax_nopriv_mfczipjpApiCall', array($this, 'fnApiCall') );
 		add_action( 'wp_ajax_nopriv_zjpas_mfczipjpApiCall', array($this, 'fnApiCall') );
 	
 		// ログインしているユーザー向け関数
-// 		add_action( 'wp_ajax_mfczipjpGetZipJPDlgHTML', array($this, 'fnGetZipJPDlgHTML') );
 		add_action( 'wp_ajax_zjpasGetZipJPDlgHTML', array($this, 'fnGetZipJPDlgHTML') );
 		
 		// 非ログインユーザー用関数
-// 		add_action( 'wp_ajax_nopriv_mfczipjpGetZipJPDlgHTML', array($this, 'fnGetZipJPDlgHTML') );
 		add_action( 'wp_ajax_nopriv_zjpasGetZipJPDlgHTML', array($this, 'fnGetZipJPDlgHTML') );
-	
 	
 		add_action('admin_print_styles', array($this, 'fnAdminPrintStyleScripts') );
 
@@ -235,7 +231,6 @@ class ZJPAS_Admin {
 						$mfczip_warnBgColor = isset($opt['warnBgColor']) ? $opt['warnBgColor']: "#FDD";
 						$mfczip_pluginscriptmode = isset($opt['pluginscript']) ? $opt['pluginscript']: "true";
 						
-//c338cea41f7dc781ab364884cab61231
 						?> 
 						<input name="zjpas_mfczipjpservice_options" type="hidden" id="" value="" class="regular-text" style="text-align: left; width: 100%;"/>
 						<table class="form-table">
@@ -287,7 +282,6 @@ class ZJPAS_Admin {
 							2.<br>
 							マイページに表示されたAPIキーを上記に入力して、保存すると郵便番号検索機能が利用可能になります。
 						</div>
-			
 			
 						<p class="submit"><input type="submit" name="Submit" class="button-primary" value="保存" /></p>
 					</form>
@@ -612,7 +606,6 @@ class ZJPAS_Admin {
 				unset($postdata['method']);
 				$postdata['apikey'] = $SERVICE_KEY;
 			} else {
-		//		throw new RuntimeException('Service is not available');
 				$ret['message']= 'サービスは利用できません。';
 			}
 			if (isset($postdata['action'])) {
