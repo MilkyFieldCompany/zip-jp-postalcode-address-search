@@ -4,7 +4,7 @@ Donate link: https://milkyfieldcompany.com/
 Tags: postalcode, postal code, address, search, contact, form, contact form, ajax, zip, code, cf7
 Requires at least: 5.8
 Tested up to: 5.8
-Stable tag: 1.0
+Stable tag: 1.0.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -23,14 +23,13 @@ Contact Form 7とも簡単に組み合わせて動作できます。
 = Privacy notices =
 
 このプラグインは、検索に関するキーワード、APIコール元のIPアドレスを特定の外部サーバ(ZIP-JP 郵便番号住所検索APIサービス: https://zipcode.milkyfieldcompany.com/)にSSL送信します。
-また、APIを利用した処理は ZIP-JP が用意したスクリプト(https://resources.milkyfieldcompany.com/zip-jp/js/mfczip_finder_wpplugin_v1.js)を利用しており、フロントへ読み込みます。
 このプラグインが行う全ての通信はSSLで安全に行われます。
 
 それ以外、このプラグイン自体は以下のことを行いません。
 
 * ステルスでユーザーを追跡します。
 * ユーザーの個人情報をデータベースに書き込みます。
-*外部のサーバーにデータを送信することができます。
+* 外部のサーバーにデータを送信することができます。
 * クッキーの使用。
 
 = usage rules =
@@ -39,11 +38,11 @@ ZIP-JP Postcode Address Search API [usage rules](https://zipcode.milkyfieldcompa
 
 = ZIP-JP Postalcode Address Search is needs your support =
 
-ZIP-JP Postalcode Address Search をお使いいただき、便利だと感じていただけましたら、ぜひ ZIP-JP郵便番号住所検索APIサービスの有料プラン(https://zipcode.milkyfieldcompany.com/) をご検討ください。このプラグインとZIP-JP郵便番号住所検索サービスの継続的な開発とより良いユーザーサポートのための励みになります。
+ZIP-JP Postalcode Address Search をお使いいただき、便利だと感じていただけましたら、ぜひ ZIP-JP郵便番号住所検索APIサービス[https://zipcode.milkyfieldcompany.com/](https://zipcode.milkyfieldcompany.com/) の有料プラン をご検討ください。このプラグインとZIP-JP郵便番号住所検索サービスの継続的な開発とより良いユーザーサポートのための励みになります。
 
 == Installation ==
 
-1. zipjp-mfc "フォルダを、"wp-content/plugins/"ディレクトリにアップロードします。
+1. `zip-jp-postalcode-address-search` フォルダを、`wp-content/plugins/` ディレクトリにアップロードします。
 1. プラグイン**画面（**Plugins > Installed Plugins**）でプラグインを有効化します。
 
 WordPressの管理画面で、**郵便番号住所検索**メニューが表示されています。
@@ -67,8 +66,10 @@ APIの利用にはAPIサービスのマイページへ登録が必要です。
 
 1. screenshot-1.png
 
-==変更ログ=== 
+== Changelog ==
 
-1.0 = 
-*ZIP-JP 郵便番号検索API連携プラグイン最初のリリース
+= 1.0.0 =
+* ZIP-JP 郵便番号検索API連携プラグイン最初のリリース
 
+== Upgrade Notice ==
+* 最初のリリース

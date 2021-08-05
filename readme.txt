@@ -4,7 +4,7 @@ Donate link: https://milkyfieldcompany.com/
 Tags: postalcode, postal code, address, search, contact, form, contact form, ajax, zip, code, cf7
 Requires at least: 5.5
 Tested up to: 5.8
-Stable tag: 1.0
+Stable tag: 1.0.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ Link API services to search addresses from Japanese postal codes.
 
 == Description ==
 
-ZIP-JP Postalcode Address Search bridges the ZIP-JP Postalcode Address Search API service (https://zipcode.milkyfieldcompany.com/) with Wordpress.
+ZIP-JP Postalcode Address Search bridges the ZIP-JP Postalcode Address Search API service (https://zipcode.milkyfieldcompany.com/) with WordPress.
 It stores the API key required to use the API service on the server and manages it so that it is not visible from the front, and helps you build input forms.
 It supports form input with the ability to search for an address by zip code or zip code by address.
 It can be easily combined and operated with Contact Form 7.
@@ -24,12 +24,13 @@ Please note that the author of this plugin is not related to the developer of Co
 
 This plugin sends a zip code search request with the keywords required for the search and the IP address of the API caller to a specific external server (ZIP-JP Zip Code Address Search API Service: 
 https://zipcode.milkyfieldcompany.com/).
+All communication done by this plugin is SSL secure.
 
 Besides that, this plugin itself does not do the following.
 
 * Tracks the user by stealth.
 * Write the user's personal information to the database.
-*Send data to external servers.
+* Send data to external servers.
 * Use cookies.
 
 = usage rules =
@@ -38,11 +39,11 @@ ZIP-JP Postcode Address Search API [usage rules](https://zipcode.milkyfieldcompa
 
 = ZIP-JP Postalcode Address Search needs your support =
 
-If you use ZIP-JP Postalcode Address Search and find it useful, please consider a paid plan for ZIP-JP Postalcode Address Search API service (https://zipcode.milkyfieldcompany.com/). This will encourage us to continue developing this plugin and the ZIP-JP Postalcode Address Search service, and to provide better user support.
+If you use ZIP-JP Postalcode Address Search and find it useful, please consider a paid plan for ZIP-JP Postalcode Address Search API service [https://zipcode.milkyfieldcompany.com/](https://zipcode.milkyfieldcompany.com/). This will encourage us to continue developing this plugin and the ZIP-JP Postalcode Address Search service, and to provide better user support.
 
 == Installation ==
 
-1. Upload the entire `zipjp-mfc` folder to the `/wp-content/plugins/` directory.
+1. Upload the entire `zip-jp-postalcode-address-search` folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the **Plugins** screen (**Plugins > Installed Plugins**).
 
 You will find **Postal Code Address Search** menu in your WordPress admin screen.
@@ -69,7 +70,8 @@ The usage is also explained in the plugin's configuration screen.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * First release of ZIP-JP ZIP Code Search API Plug-in
 
 == Upgrade Notice ==
+* first release.
