@@ -78,4 +78,4 @@ The usage is also explained in the plugin's configuration screen.
 * fix readme
 
 == Upgrade Notice ==
-* first release.
+* Supports other languages.
