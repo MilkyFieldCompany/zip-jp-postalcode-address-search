@@ -23,6 +23,7 @@ Contact Form 7とも簡単に組み合わせて動作できます。
 = Privacy notices =
 
 このプラグインは、検索に関するキーワード、APIコール元のIPアドレスを特定の外部サーバ(ZIP-JP 郵便番号住所検索APIサービス: https://zipcode.milkyfieldcompany.com/)にSSL送信します。
+また、APIを利用した処理は ZIP-JP が用意したスクリプト(https://resources.milkyfieldcompany.com/zip-jp/js/mfczip_finder_wpplugin_v1.js)を利用します。
 このプラグインが行う全ての通信はSSLで安全に行われます。
 
 それ以外、このプラグイン自体は以下のことを行いません。
@@ -70,6 +71,9 @@ APIの利用にはAPIサービスのマイページへ登録が必要です。
 
 = 1.0.0 =
 * ZIP-JP 郵便番号検索API連携プラグイン最初のリリース
+
+= 1.0.1 =
+* fix readme.
 
 == Upgrade Notice ==
 * 最初のリリース

@@ -24,6 +24,7 @@ Please note that the author of this plugin is not related to the developer of Co
 
 This plugin sends a zip code search request with the keywords required for the search and the IP address of the API caller to a specific external server (ZIP-JP Zip Code Address Search API Service: 
 https://zipcode.milkyfieldcompany.com/).
+In addition, the processing using the API uses the script (https://resources.milkyfieldcompany.com/zip-jp/js/mfczip_finder_wpplugin_v1.js) prepared by ZIP-JP.
 All communication done by this plugin is SSL secure.
 
 Besides that, this plugin itself does not do the following.
@@ -72,6 +73,9 @@ The usage is also explained in the plugin's configuration screen.
 
 = 1.0.0 =
 * First release of ZIP-JP ZIP Code Search API Plug-in
+
+= 1.0.1 =
+* fix readme
 
 == Upgrade Notice ==
 * first release.
