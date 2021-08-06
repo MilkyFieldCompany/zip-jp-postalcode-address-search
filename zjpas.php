@@ -2,7 +2,7 @@
 /*
 Plugin Name: ZIP-JP Postalcode Address Search
 Plugin URI: https://zipcode.milkyfieldcompany.com/
-Description: 郵便番号住所検索プラグイン。郵便番号から住所、住所から郵便番号、地名から住所や郵便番号の候補を表示して入力を支援します。※使用するにはプラグインのサイトからAPIキーを取得してください。
+Description: Zip code address search plugin. It supports input by displaying zip code to address, address to zip code, and place name to address and zip code candidates. * To use it, get the API key from the ZIP-JP API service site.
 Author: milkyfield
 Version: 1.0
 Author URI: https://milkyfieldcompany.com/
@@ -83,6 +83,7 @@ class ZJPAS_Admin {
 		$type = 'button';
 
 		$description = __( "Generate a address search button tag.", 'zip-jp-postalcode-address-search' );
+		$desc_link = "";
 
 		include 'cbox_btnaddress.php';
 	}
@@ -92,6 +93,7 @@ class ZJPAS_Admin {
 		$type = 'button';
 
 		$description = __( "Generate a postalcode search button tag.", 'zip-jp-postalcode-address-search' );
+		$desc_link = "";
 
 		include 'cbox_btnpostcode.php';
 	}
@@ -101,6 +103,7 @@ class ZJPAS_Admin {
 		$type = 'text';
 
 		$description = __( "Generates a form tag for a single-line postalcode search plain text input.", 'zip-jp-postalcode-address-search' );
+		$desc_link = "";
 
 		include 'cbox_text.php';
 	}
@@ -204,7 +207,7 @@ class ZJPAS_Admin {
 			
 			check_admin_referer('zjpas_zipjp_config', 'zjpas_zipjpadmn');
 			update_option('zjpas_mfczipjpservice_options', $zjpas_mfczipjpservice_options);
- 			?><div class="updated fade"><p><strong><?php _e('ZIP-JP Postalcode Address Search 設定値を保存しました。') ?></strong></p></div><?php
+ 			?><div class="updated fade"><p><strong><?php _e( 'The setting value has been saved.', 'zip-jp-postalcode-address-search' ) ?></strong></p></div><?php
 		}
 ?>
 		<div class="wrap">
