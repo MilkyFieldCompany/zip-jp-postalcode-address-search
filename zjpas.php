@@ -506,8 +506,8 @@ class ZJPAS_Admin {
 			$mfczipjspath = ZJPAS_ZIPJP_FRONTEND_SCRIPT;
 			$mfczip_api_serviceurl = "/wp-admin/admin-ajax.php";
 		} else {
-			$mfczipjspath = home_url( ‘/’ ).'/mfczip_finder_v1.js';
-			$mfczip_api_serviceurl = home_url( ‘/’ ).'/mfcziprelay_v1.php';
+			$mfczipjspath = home_url('/').'/mfczip_finder_v1.js';
+			$mfczip_api_serviceurl = home_url('/').'/mfcziprelay_v1.php';
 		}
 
 		if (is_admin()) {
