@@ -4,7 +4,7 @@ Donate link: https://milkyfieldcompany.com/
 Tags: postalcode, postal code, address, search, contact, form, contact form, ajax, zip, code, cf7
 Requires at least: 5.8
 Tested up to: 5.8
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -73,6 +73,9 @@ APIの利用にはAPIサービスのマイページへ登録が必要です。
 * ZIP-JP 郵便番号検索API連携プラグイン最初のリリース
 
 = 1.0.1 =
+* fix readme.
+
+= 1.0.2 =
 * fix readme.
 
 == Upgrade Notice ==
