@@ -4,7 +4,7 @@ Plugin Name: ZIP-JP Postalcode Address Search
 Plugin URI: https://zipcode.milkyfieldcompany.com/
 Description: Zip code address search plugin. It supports input by displaying zip code to address, address to zip code, and place name to address and zip code candidates. * To use it, get the API key from the ZIP-JP API service site.
 Author: milkyfield
-Version: 1.0
+Version: 1.1.0
 Author URI: https://milkyfieldcompany.com/
 License: GPL2
 
@@ -32,6 +32,8 @@ class ZJPAS_Admin {
 		/* do stuff once right after activation */
 		add_action( 'init', array( $this, 'init' ) );
 
+		add_action( 'wp_enqueue_scripts', array( $this, 'requireScripts' ) );
+
 		add_action('wp_footer', array( $this, 'fnAddScript' ));
 		
 		add_action('plugins_loaded', array( $this, 'mfczipjp_dbcheck' ));
@@ -42,6 +44,10 @@ class ZJPAS_Admin {
 		// Tag generator
 		add_action('admin_init', array( $this , 'tag_generator'), 590);
 
+	}
+	
+	function requireScripts() {
+		wp_enqueue_script( 'jquery' );
 	}
 
 	public static function add_shortcodes() {
@@ -507,7 +513,7 @@ class ZJPAS_Admin {
 
 		if ($mfczip_pluginscriptmode == "true") {
 			$mfczipjspath = ZJPAS_ZIPJP_FRONTEND_SCRIPT;
-			$mfczip_api_serviceurl = "/wp-admin/admin-ajax.php";
+			$mfczip_api_serviceurl = admin_url()."/admin-ajax.php";
 		} else {
 			$mfczipjspath = home_url('/').'/mfczip_finder_v1.js';
 			$mfczip_api_serviceurl = home_url('/').'/mfcziprelay_v1.php';

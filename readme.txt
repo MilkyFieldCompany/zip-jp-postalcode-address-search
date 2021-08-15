@@ -4,7 +4,7 @@ Donate link: https://milkyfieldcompany.com/
 Tags: postalcode, postal code, address, search, contact, form, contact form, ajax, zip, code, cf7
 Requires at least: 5.5
 Tested up to: 5.8
-Stable tag: 1.0.2
+Stable tag: 1.1.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -36,7 +36,7 @@ Besides that, this plugin itself does not do the following.
 
 = usage rules =
 
-ZIP-JP Postcode Address Search API [usage rules](https://zipcode.milkyfieldcompany.com/terms.html) Japanese Only.
+ZIP-JP Postcode Address Search API [usage rules](https://zipcode.milkyfieldcompany.com/terms.html).
 
 = ZIP-JP Postalcode Address Search needs your support =
 
@@ -80,5 +80,10 @@ The usage is also explained in the plugin's configuration screen.
 = 1.0.2 =
 * fix readme
 
+= 1.1.0 =
+* admin-ajax.php path fix.
+
 == Upgrade Notice ==
-* Supports other languages.
+
+= 1.1.0 =
+If the site URL and Wordpress URL are different, we recommend upgrading. Fixed how to get the path of admin-ajax.php.
