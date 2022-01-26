@@ -3,7 +3,7 @@ Contributors: milkyfield
 Donate link: https://milkyfieldcompany.com/
 Tags: postalcode, postal code, address, search, contact, form, contact form, ajax, zip, code, cf7
 Requires at least: 5.5
-Tested up to: 5.8
+Tested up to: 5.9
 Stable tag: 1.1.0
 Requires PHP: 7.0
 License: GPLv2 or later
