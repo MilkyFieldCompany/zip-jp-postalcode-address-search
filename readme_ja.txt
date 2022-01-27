@@ -2,9 +2,9 @@
 Contributors: milkyfield
 Donate link: https://milkyfieldcompany.com/
 Tags: postalcode, postal code, address, search, contact, form, contact form, ajax, zip, code, cf7
-Requires at least: 5.8
+Requires at least: 5.5
 Tested up to: 5.9
-Stable tag: 1.1.0
+Stable tag: 2.0.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
 
 ZIP-JP Postalcode Address Search は ZIP-JP 郵便番号住所検索APIサービス(https://zipcode.milkyfieldcompany.com/)をWordpress上で機能させる橋渡しを行います。
-APIサービスの利用に必要なAPIキーを サーバー 上に保管し、フロントから見えないよう管理して、入力フォームの構築を支援します。
 郵便番号から住所の検索や、住所から郵便番号を検索する機能で、フォーム入力を支援します。
 Contact Form 7とも簡単に組み合わせて動作できます。
 
@@ -81,7 +80,12 @@ APIの利用にはAPIサービスのマイページへ登録が必要です。
 = 1.1.0 =
 * admin-ajax.php path fix.
 
+= 2.0.0 =
+* 郵便番号からの自動検索に対応
+* 標準動作モードをJSONPでの動作に変更して検索速度を向上
+* wordpress-ajaxの廃止
+
 == Upgrade Notice ==
 
-= 1.1.0 =
-サイトURLとWordpressURLが異なる場合アップグレードを推奨します。admin-ajax.phpのパスを取得する方法を修正しました。
+= 2.0.0 =
+郵便番号からの自動検索に対応しました。

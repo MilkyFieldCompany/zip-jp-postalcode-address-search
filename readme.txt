@@ -4,7 +4,7 @@ Donate link: https://milkyfieldcompany.com/
 Tags: postalcode, postal code, address, search, contact, form, contact form, ajax, zip, code, cf7
 Requires at least: 5.5
 Tested up to: 5.9
-Stable tag: 1.1.0
+Stable tag: 2.0.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,6 @@ Link API services to search addresses from Japanese postal codes.
 == Description ==
 
 ZIP-JP Postalcode Address Search bridges the ZIP-JP Postalcode Address Search API service (https://zipcode.milkyfieldcompany.com/) with WordPress.
-It stores the API key required to use the API service on the server and manages it so that it is not visible from the front, and helps you build input forms.
 It supports form input with the ability to search for an address by zip code or zip code by address.
 It can be easily combined and operated with Contact Form 7.
 
@@ -83,7 +82,12 @@ The usage is also explained in the plugin's configuration screen.
 = 1.1.0 =
 * admin-ajax.php path fix.
 
+= 2.0.0 =
+* Supports automatic search from postalcode.
+* Changed the standard operation mode to JSONP operation to improve search speed.
+* Abolition of wordpress-ajax.
+
 == Upgrade Notice ==
 
-= 1.1.0 =
-If the site URL and Wordpress URL are different, we recommend upgrading. Fixed how to get the path of admin-ajax.php.
+= 2.0.0 =
+Added support for automatic search from postalcode.
